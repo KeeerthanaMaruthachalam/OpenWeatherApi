@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cuurent w3eather information</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="jumbotron" style="margin-bottom:0px; color:white; background-color:skyblue">
+            <h2 class="text-center" style="font-size:50px; font-weight:600;">Get Current weather</h2>
+        </div>
+        <div class="container" style="height: 650px;">
+            <div class="row" style="margin:20px;">
+                <h3 class="text-center text-primary">Enter City name</h3>
+                <span id="error"></span>
+            </div>
+            <div class="row form-group form-inline" >
+                <input type="text" name="city" id="city" class="form-control" placeholder="City Name">&nbsp;&nbsp;
+                <button id="submit" class="btn btn-primary">Search City</button>
+            </div>
+
+            <div id="show"></div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row text-center" style="padding-top:30px;" >
+                    <p style="color: white; font-size: 20px; font-weight:bold;">Copyright &copy; Current Weather App</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="weather1.js"></script>
+    </body>
+</html>
